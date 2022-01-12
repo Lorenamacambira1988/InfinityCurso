@@ -4,14 +4,19 @@
 
     </head>
 <body> 
+    <ul id = "display"> 
+    <button onclick="preenche()">preenche</button>    
+        
+    </ul>
     <script>
         document.forms[0]
-        const frutas = ["maça", "banana", "melancia"];
+        const frutas = ["Maca", "Banana", "Melancia", "Manga"];
         console.log(frutas);
 
         for(let i = 0; i <frutas.length; i++){
-            alert("Passo: " + i + "Valor: " + frutas[i]);
-            frutas[i] = i + "-" + frutas[i];        
+           document.getElementById("display").innerHTML += '<li>' +frutas[i] +'</li>';
+           
+           
         }
     </script>
 </body>
