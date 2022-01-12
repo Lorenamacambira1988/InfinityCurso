@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+<body> 
+    <script>
+        document.forms[0]
+        const frutas = ["maça", "banana", "melancia"];
+        console.log(frutas);
+
+        for(let i = 0; i <frutas.length; i++){
+            alert("Passo: " + i + "Valor: " + frutas[i]);
+            frutas[i] = i + "-" + frutas[i];        
+        }
+    </script>
+</body>
+</html>
